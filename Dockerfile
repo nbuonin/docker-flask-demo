@@ -1,6 +1,4 @@
-FROM python:3.6-slim
-
-WORKDIR /app
+FROM kennethreitz/pipenv 
 
 ADD . /app
 
@@ -12,4 +10,4 @@ EXPOSE 80
 
 ENV NAME World
 
-CMD ["pipenv", "run", "python", "app.py"]
+CMD ["python3", "app.py"]
