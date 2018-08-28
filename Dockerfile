@@ -4,7 +4,7 @@ ADD . /app
 
 RUN pip install pipenv
 
-RUN pipenv install
+#RUN pipenv install
 
 EXPOSE 80
 
